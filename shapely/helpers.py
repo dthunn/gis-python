@@ -27,7 +27,7 @@ def plot_geometries(geom1: BaseGeometry, geom2: BaseGeometry):
     plot_geom(geom2, 'red', 'Geometry 2')
 
     ax.set_aspect('equal')
-    ax.legend()
+    ax.legend(loc='upper right')
     ax.grid(True)
     ax.set_title(f"{geom1.geom_type} and {geom2.geom_type}")
     plt.show()
@@ -59,7 +59,7 @@ def plot_three_geometries(geom1: BaseGeometry, geom2: BaseGeometry, geom3: BaseG
     plot_geom(geom3, 'green', 'Geometry 3')
 
     ax.set_aspect('equal')
-    ax.legend()
+    ax.legend(loc='upper right')
     ax.grid(True)
     ax.set_title(f"{geom1.geom_type}, {geom2.geom_type}, and {geom3.geom_type}")
     plt.show()
